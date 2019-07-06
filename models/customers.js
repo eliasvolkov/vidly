@@ -31,8 +31,8 @@ function customerValidate(customer) {
       .max(12)
       .required()
   };
-  const result = Joi.validate(customer, schema);
-  return result.error;
+  const result = Joi.validate(user, schema);
+  return result;
 }
 
 exports.Customer = Customer;
